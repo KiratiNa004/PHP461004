@@ -1,8 +1,8 @@
 <?php
-session_start();
+
 require '../config.php';
 // ตรวจสอบสิทธิ์admin
-require 'auth.admin.php';
+require 'auth_admin.php';
 ?>
 <!DOCTYPE html>
 <html lang="th">
@@ -69,7 +69,7 @@ require 'auth.admin.php';
                 <a href="user.php" class="btn btn-warning w-100">👥 จัดการสมาชิก</a>
             </div>
             <div class="col-md-6 col-lg-3 mb-3">
-                <a href="categories.php" class="btn btn-dark w-100">📂 จัดการหมวดหมู่</a>
+                <a href="category.php" class="btn btn-dark w-100">📂 จัดการหมวดหมู่</a>
             </div>
         </div>
 
