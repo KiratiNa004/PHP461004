@@ -59,7 +59,62 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
             font-style: italic;
         }
     </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .product-card {
+            border: 1;
+            background: #fff;
+        }
+
+        .product-thumb {
+            height: 180px;
+            object-fit: cover;
+            border-radius: .5rem;
+        }
+
+        .product-meta {
+            font-size: .75rem;
+            letter-spacing: .05em;
+            color: #8a8f98;
+            text-transform: uppercase;
+        }
+
+        .product-title {
+            font-size: 1rem;
+            margin: .25rem 0 .5rem;
+            font-weight: 600;
+            color: #222;
+        }
+
+        .price {
+            font-weight: 700;
+        }
+
+        .rating i {
+            color: #ffc107;
+        }
+
+        /* ดำวสที อง */
+        .wishlist {
+            color: #b9bfc6;
+        }
+
+        .wishlist:hover {
+            color: #ff5b5b;
+        }
+
+        .badge-top-left {
+            position: absolute;
+            top: .5rem;
+            left: .5rem;
+            z-index: 2;
+            border-radius: .375rem;
+        }
+    </style>
+
 </head>
+
 
 <body class="container mt-4">
 
@@ -81,6 +136,7 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <?php endif; ?>
         </div>
     </div>
+
 
     <!-- รายการสินค้า -->
     <div class="row">

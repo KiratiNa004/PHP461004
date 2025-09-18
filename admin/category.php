@@ -1,7 +1,7 @@
 <?php
 
 require '../config.php'; // TODO: เชอื่ มตอ่ ฐำนขอ้ มลู ดว้ย PDO
-require 'auth_admin.php'; // TODO: เชอื่ มตอ่ ฐำนขอ้ มลู ดว้ย PDO
+require 'auth.admin.php'; // TODO: เชอื่ มตอ่ ฐำนขอ้ มลู ดว้ย PDO
 
 // เพิ่มหมวดหมู่
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_category'])) {
