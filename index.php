@@ -129,6 +129,7 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 </span>
                 <a href="profile.php" class="btn btn-info btn-sm">ข้อมูลส่วนตัว</a>
                 <a href="cart.php" class="btn btn-warning btn-sm">ดูตะกร้าสินค้า</a>
+                <a href="orders.php" class="btn btn-warning btn-sm">ดูประวัติการสั่งซื้อ</a>
                 <a href="logout.php" class="btn btn-danger btn-sm">ออกจากระบบ</a>
             <?php else: ?>
                 <a href="login.php" class="btn btn-success btn-sm">เข้าสู่ระบบ</a>
@@ -157,6 +158,7 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
                             <?php if ($isLoggedIn): ?>
                                 <form action="cart.php" method="post" class="d-inline">
                                     <input type="hidden" name="product_id" value="<?= $รหัสสินค้า ?>">
+
                                     <input type="hidden" name="quantity" value="1">
                                     <button type="submit" class="btn btn-sm btn-success">➕ เพิ่มในตะกร้า</button>
                                 </form>
